@@ -1,0 +1,22 @@
+<%- include("_header") %>
+<div class="container">
+
+	<p>
+	<h1>Admin</h1>
+	</p>
+	<p class="text-light">Welcome to the admin site of Phaser Editor 2D Marketplace</p>
+		
+	<p>
+		<a class="btn btn-primary" href="/authors/add">Add Author</a>
+	</p>
+
+	<p>Select an author to admin:</p>
+
+	<div class="list-group">
+		<% for (page of authors) { %>
+			<%- include("_pagelink", {page, href: "/authors/" + page.$name}) %>                
+		<% } %>
+	</div>
+</div>
+
+<%- include("_footer") %>

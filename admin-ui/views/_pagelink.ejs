@@ -1,0 +1,6 @@
+<a class="list-group-item list-group-item-action" href="<%= href %>">
+    <% if (page.image) { %>
+        <img class="me-2" style="min-width: 1em; max-width: 2em;max-height: 2em;" src="/content/<%= page.$path + "/" + page.image %>">
+    <% } %>
+    <%= page.title %>
+</a>

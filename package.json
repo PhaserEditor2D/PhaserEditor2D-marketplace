@@ -4,18 +4,25 @@
     "description": "",
     "main": "index.js",
     "type": "module",
+    "private": true,
     "scripts": {
         "start": "nodemon index.js --watch themes --watch content  -e ejs,png,jpg,md,css,html,conf",
         "server": "http-server www",
         "build": "node index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "admin": "node admin-ui/bin/www"
     },
     "author": "Arian Fornaris <developers@phasereditor2d.com> (https://phasereditor2d.com/)",
     "license": "ISC",
     "devDependencies": {
         "@types/node": "^16.11.11",
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "ejs": "~2.6.1",
+        "express": "~4.16.1",
+        "http-errors": "~1.6.3",
         "http-server": "^14.0.0",
+        "morgan": "~1.9.1",
         "nodemon": "^2.0.15",
-        "staticojs": "^1.0.5"
+        "staticojs": "file:../staticojs"
     }
 }
