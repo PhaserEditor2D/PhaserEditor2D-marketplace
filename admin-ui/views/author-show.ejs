@@ -3,18 +3,21 @@
     <div class="container">
 
         <p>
-            <h1>
-                <img class="me-2" style="max-width: 1em;max-height: 1em;" src="/content/<%= author.$path + "/" + author.image %>">
-                <%= author.title %>
-            </h1>
+        <h1>
+            <img class="me-2" style="max-width: 1em;max-height: 1em;" src="/content/<%= author.$path + "/" +
+                author.image %>">
+            <%= author.title %>
+        </h1>
         </p>
         <p>
             <%= author.description %>
         </p>
 
         <p>
-            <a class="btn btn-primary" href="/authors/edit/<%= author.$name %>">Edit Info</a>
-            <a class="btn btn-danger" href="/authors/delete/<%= author.$name %>">Delete Author</a>
+            <a class="btn btn-primary" href="/authors/<%= author.$name %>/edit">Edit Info</a>
+            <% if (canDelete) { %> 
+                <a class="btn btn-danger" href="/authors/<%= author.$name %>/delete">Delete Author</a>
+            <% } %>
         </p>
 
     </div>
@@ -23,13 +26,13 @@
         <h4>Starters</h4>
 
         <p>
-            <a class="" href="/starters/add/<%= author.$name %>">Add Starter Template  &RightArrow;</a>
+            <a class="" href="/starters/add/<%= author.$name %>">Add Starter Template &RightArrow;</a>
         </p>
 
         <div class="list-group">
             <% for (page of starters) { %>
-                <%- include("_pagelink", {page, href: "/starters/" + page.$name}) %>                
-            <% } %>
+                <%- include("_pagelink", {page, href: "/starters/" + page.$name}) %>
+                    <% } %>
         </div>
     </div>
 
@@ -42,8 +45,8 @@
 
         <div class="list-group">
             <% for (page of examples) { %>
-                <%- include("_pagelink", {page, href: "/examples/" + page.$name}) %>                
-            <% } %>
+                <%- include("_pagelink", {page, href: "/examples/" + page.$name}) %>
+                    <% } %>
         </div>
     </div>
 
@@ -56,8 +59,8 @@
 
         <div class="list-group">
             <% for (page of websites) { %>
-                <%- include("_pagelink", {page, href: "/websites/" + page.$name}) %>                
-            <% } %>
+                <%- include("_pagelink", {page, href: "/websites/" + page.$name}) %>
+                    <% } %>
         </div>
     </div>
 
@@ -70,9 +73,9 @@
 
         <div class="list-group">
             <% for (page of plugins) { %>
-                <%- include("_pagelink", {page, href: "/plugins/" + page.$name}) %>                
-            <% } %>
+                <%- include("_pagelink", {page, href: "/plugins/" + page.$name}) %>
+                    <% } %>
         </div>
     </div>
 
-<%- include("_footer") %>
+    <%- include("_footer") %>

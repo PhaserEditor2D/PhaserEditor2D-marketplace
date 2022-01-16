@@ -1,0 +1,12 @@
+<div class="mb-3">
+    <label for="imageInput" class="form-label">Image</label>
+    <select id="imageInput" name="image" class="form-select" aria-label="Default select example">
+        <% for (const image of images) { %>
+            <option value="<%= image %>" <%= page.image === image? "selected": "" %>><%= image %></option>
+        <% } %>
+    </select>
+    <div class="form-text">
+        Select one of the images.
+        If no image is available, you should copy one to the <a href="javascript:requestOpenFolder('<%= `${page.$path}/assets`%>')"><%= page.$path %>/assets</a> folder.   
+    </div>
+</div>

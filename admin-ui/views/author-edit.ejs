@@ -1,0 +1,30 @@
+<%- include("_header") %>
+
+    <div class="container mt-3">
+
+        <p>
+            Edit the data of the author: <i>
+                <%= author.title %>
+            </i>.
+        </p>
+
+        <%- include("_pageToolbar", {page: author}) %>
+
+            <form method="post">
+                <div class="mb-3">
+                    <label for="titleInput" class="form-label">Title</label>
+                    <input class="form-control" id="titleInput" name="title" value="<%= author.title %>">
+                </div>
+                <div class="mb-3">
+                    <label for="descriptionInput" class="form-label">Description</label>
+                    <input class="form-control" id="descriptionInput" name="description"
+                        value="<%= author.description %>">
+                </div>
+
+                <%- include("_formImageRow", {page: author, images}) %>
+
+                    <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+
+    </div>
+    <%- include("_footer") %>
