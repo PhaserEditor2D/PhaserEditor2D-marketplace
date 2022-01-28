@@ -1,7 +1,30 @@
 const express = require("express");
-const { start } = require("repl");
+const { mkdirSync } = require("fs");
+const { join } = require("path");
 const { site, siteBuilder } = require("../siteBuilder");
 const router = express.Router();
+
+
+router.post("/add", (req, res, next) => {
+
+	const { name } = req.body;
+
+	siteBuilder.createPage({
+		$path: "authors/" + name,
+		title: "My Name",
+		description: "My description",
+		image: "assets/author.png"
+	});
+
+	res.redirect("/authors/" + name + "/edit");
+});
+
+router.get("/add", (req, res, next) => {
+
+	const name = "untitled-author";
+
+	res.render("author-add", { title: "Add author", name });
+});
 
 router.get("/:id/delete", (req, res, next) => {
 
