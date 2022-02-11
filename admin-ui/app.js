@@ -7,6 +7,7 @@ const logger = require("morgan");
 const indexRouter = require("./routes/index");
 const authorsRouter = require("./routes/authors");
 const openRouter = require("./routes/open");
+const assetsRouter = require("./routes/assets");
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/content", express.static(path.join(__dirname, "..", "content", "en")));
 
 app.use("/", indexRouter);
+app.use("/assets", assetsRouter);
 app.use("/authors", authorsRouter);
 app.use("/open", openRouter)
 

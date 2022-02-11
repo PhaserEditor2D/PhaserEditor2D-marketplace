@@ -1,6 +1,4 @@
 const express = require("express");
-const { mkdirSync } = require("fs");
-const { join } = require("path");
 const { site, siteBuilder } = require("../siteBuilder");
 const router = express.Router();
 
@@ -9,8 +7,7 @@ router.post("/add", (req, res, next) => {
 
 	const { name } = req.body;
 
-	siteBuilder.createPage({
-		$path: "authors/" + name,
+	siteBuilder.createPage("authors", name, {
 		title: "My Name",
 		description: "My description",
 		image: "assets/author.png"
@@ -66,6 +63,8 @@ router.post("/:id/edit", (req, res, next) => {
 router.get("/:id", (req, res, next) => {
 
 	const id = req.params.id;
+
+	console.log(site.__authors);
 
 	const author = site.__authors["__" + id];
 

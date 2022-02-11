@@ -7,6 +7,32 @@
     </select>
     <div class="form-text">
         Select one of the images.
-        If no image is available, you should copy one to the <a href="javascript:requestOpenFolder('<%= `${page.$path}/assets`%>')"><%= page.$path %>/assets</a> folder.   
+        If no image is available, you should copy one to the
+        <a href="javascript:requestOpenFolder('<%= `${page.$path}/assets`%>')"><%= page.$path %>/assets</a> folder
+        and <a href="javascript:refreshImageInput()">refresh the images selector</a>.
     </div>
 </div>
+
+<script>
+
+    async function refreshImageInput() {
+
+        const imageInputElement = document.getElementById("imageInput");
+        imageInputElement.innerHTML = "";
+
+        const selected = "<%= page.image %>";
+        const resp = await fetch("/assets/<%= page.$path %>");
+        const images = await resp.json();
+
+        for(const image of images) {
+
+            const elem = document.createElement("option");
+            
+            elem.value = image;
+            elem.selected = image === selected;
+            elem.innerHTML = image;
+
+            imageInputElement.appendChild(elem);
+        }
+    }
+</script>
