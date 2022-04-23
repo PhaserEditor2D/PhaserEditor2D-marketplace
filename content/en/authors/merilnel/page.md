@@ -1,5 +1,5 @@
 ---
 title: René Bača
 description: HTML5 Interactive Books & Minigames Developer
-image: assets/MerlinEl.png
+image: assets/merlinel.png
 ---
