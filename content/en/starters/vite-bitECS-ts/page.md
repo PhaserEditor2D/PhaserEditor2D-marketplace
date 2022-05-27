@@ -2,7 +2,7 @@
 title: Vite.js TypeScript
 description: The template for real games too. Vite & TypeScript.
 author: gregwoodsfrontier
-image: assets/vite-ts.png
+image: assets/vite-bitecs-ts.png
 zip_url: https://github.com/gregwoodsfrontier/ecs-phaser-editor/archive/refs/heads/master.zip 
 website: https://github.com/gregwoodsfrontier/ecs-phaser-editor/
 tags: ["typescript", "vite"]
