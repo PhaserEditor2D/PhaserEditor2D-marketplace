@@ -1,15 +1,15 @@
 <div class="card me-2 mt-2 bg-transparent border-0">
 
     <h6 class="card-title">
-        <a class="text-white text-bold text-decoration-none" href="/<%= page.$path %>">
+        <a class="text-white text-bold text-decoration-none" href="<%= $page.$rootPath %>/<%= page.$path %>">
             <i class="<%= icon %> text-primary me-1"></i> <%= page.title %>
         </a>
     </h6>
 
     <% if (page.image) { %>
-    <a class="text-light text-bold text-decoration-none bg-dark" href="/<%= page.$path %>"
+    <a class="text-light text-bold text-decoration-none bg-dark" href="<%= $page.$rootPath %>/<%= page.$path %>"
         
-        style="height: 10em;background-size: cover;background-position: center; background-image: url(/<%= page.$path %>/<%= page.image %>);"
+        style="height: 10em;background-size: cover;background-position: center; background-image: url(<%= $page.$rootPath %>/<%= page.$path %>/<%= page.image %>);"
         
         >
     </a>
@@ -19,7 +19,7 @@
         
         <p class="card-text fs-6 fw-light">
             <%= page.description %>
-            By <a href="/authors/<%= page.author %>"><%= page.author %></a>.
+            By <a href="<%= $page.$rootPath %>/authors/<%= page.author %>"><%= page.author %></a>.
         </p>
     </div>
 </div>

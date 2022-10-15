@@ -11,4 +11,4 @@ A Phaser Editor 2D plugin for supporting a RoundedRectangle game object.
 
 For installing instructions and documentation check the [plugin repository](https://github.com/PhaserEditor2D/phasereditor2d-roundedRectangle-plugin).
 
-**This plugin is depcrecated, please, check the new [RoundedRectangleGraphics plugin](./roundedRectangleGraphics).**
+**This plugin is depcrecated, please, check the new [RoundedRectangleGraphics plugin](../roundedRectangleGraphics).**
