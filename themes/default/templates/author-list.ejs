@@ -12,7 +12,7 @@
     
             <div class="list-group">
                 <% for(const author of $page.$pages) { %>
-                    <a href="/<%= author.$path %>" class="list-group-item list-group-item-action bg-transparent fw-bold">
+                    <a href="<%= $page.$rootPath %>/<%= author.$path %>" class="list-group-item list-group-item-action bg-transparent fw-bold">
                         <%- include("includes/_author-img.ejs", {author}) %>
                         <%= author.title %>
                     </a>

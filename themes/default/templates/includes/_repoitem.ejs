@@ -10,7 +10,7 @@
 
                 <% if ($page.image) { %>
                     <p>
-                        <img class="img-fluid" src="/<%= $page.$path %>/<%= $page.image %>">
+                        <img class="img-fluid" src="<%= $page.$rootPath %>/<%= $page.$path %>/<%= $page.image %>">
                     </p>
                     <% } %>
 
@@ -23,7 +23,7 @@
                 <p>
                     <% const author = site.__authors['__' + $page.author]; %>
                     <% if (author) { %>
-                        <a href="/<%= author.$path %>" class="text-decoration-none fw-bold text-white">
+                        <a href="<%= $page.$rootPath %>/<%= author.$path %>" class="text-decoration-none fw-bold text-white">
                         
                             <%- include("includes/_author-img.ejs", {author}) %>
                             <%= author.title %>
