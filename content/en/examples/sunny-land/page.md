@@ -2,7 +2,7 @@
 title: Sunny land
 description: A platformer based on a Tiled map, and Arcade physics.
 image: assets/starter-example-sunny-land.png
-zip_url: https://github.com/PhaserEditor2D/starter-example-sunny-land/archive/refs/tags/v1.1.0.zip
+zip_url: https://github.com/PhaserEditor2D/starter-example-sunny-land/archive/refs/tags/v1.1.1.zip
 website: https://github.com/PhaserEditor2D/starter-example-sunny-land
 gitpod_url: https://gitpod.io/#https://github.com/PhaserEditor2D/starter-example-sunny-land
 author: phasereditor2d
