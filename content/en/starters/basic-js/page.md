@@ -13,4 +13,4 @@ A basic template for making a game with JavaScript.
 
 We recommend this template only for making prototypes or learning Phaser and Phaser Editor 2D.
 
-For larger games we recommend using the [webpack template](../starters/webpack-ts/).
+For larger games we recommend using the [webpack template](../../starters/webpack-ts/).
