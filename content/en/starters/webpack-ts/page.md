@@ -9,8 +9,8 @@ gitpod_url: https://gitpod.io/#https://github.com/PhaserEditor2D/starter-templat
 tags: ["typescript", "webpack"]
 ---
 
-A project template for making games.
+A project template for making large or professional games.
 
-We recommend this template for making larger or professional games.
+It is configured with Webpack and TypeScript. It also allows to auto deploying/hosting the game to GitHub Pages.
 
-Take a look to the [README](https://github.com/PhaserEditor2D/starter-template-webpack) of the project for some guidelines.
+Take a look to the [README](https://github.com/PhaserEditor2D/starter-template-webpack) of the project for guidelines and instructions.
