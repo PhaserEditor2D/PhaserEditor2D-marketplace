@@ -6,6 +6,7 @@ image: assets/starter-project-webpack-typescript-responsive.png
 zip_url: https://github.com/talhaozdemir/agonima-webpack-ts-responsive/archive/refs/heads/main.zip 
 website: https://github.com/talhaozdemir/agonima-webpack-ts-responsive
 tags: ["typescript", "webpack", "responsive"]
+enabled: false
 ---
 
 Tired of seeing black bars at the edges of the screen?
