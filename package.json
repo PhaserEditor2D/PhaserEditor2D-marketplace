@@ -15,7 +15,9 @@
     "devDependencies": {
         "@types/node": "^16.11.11",
         "http-server": "^14.0.0",
-        "nodemon": "^2.0.15",
-        "staticojs": "^1.0.7"
+        "nodemon": "^2.0.15"
+    },
+    "dependencies": {
+        "staticojs": "^1.0.9"
     }
 }
