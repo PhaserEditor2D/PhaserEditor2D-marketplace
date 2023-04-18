@@ -5,6 +5,7 @@ image: assets/roundedRectangle.png
 author: phasereditor2d
 website: https://github.com/PhaserEditor2D/phasereditor2d-roundedRectangle-plugin
 tags: ["shape", "game-object", "rounded-rectangle"]
+enabled: false
 ---
 
 A Phaser Editor 2D plugin for supporting a RoundedRectangle game object.
