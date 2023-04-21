@@ -2,11 +2,11 @@
 title: Volcano
 description: A platformer fully designed with the Scene Editor.
 image: assets/starter-example-volcano.png
-zip_url: https://github.com/PhaserEditor2D/starter-example-volcano/archive/refs/tags/v1.1.1.zip
+zip_url: https://github.com/PhaserEditor2D/starter-example-volcano/archive/refs/tags/v1.2.0.zip
 website: https://github.com/PhaserEditor2D/starter-example-volcano
 gitpod_url: https://gitpod.io/#https://github.com/PhaserEditor2D/starter-example-volcano
 author: phasereditor2d
-tags: ["typescrpit"]
+tags: ["typescrpit", "webpack"]
 ---
 
 A demo game for showcasing the Scene Editor.
