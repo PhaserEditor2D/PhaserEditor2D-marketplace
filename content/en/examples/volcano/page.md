@@ -12,3 +12,5 @@ tags: ["typescrpit", "webpack"]
 A demo game for showcasing the Scene Editor.
 
 The level is made using prefab instances for characters and items, and game object images for the platforms and other level elements.
+
+You can [play it here](https://phasereditor2d.github.io/starter-example-volcano/).
