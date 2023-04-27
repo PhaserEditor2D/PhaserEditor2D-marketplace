@@ -3,7 +3,7 @@ title: Basic Custom Web Fonts
 description: A template for loading webfonts into the game & the editor.
 author: phasereditor2d
 image: assets/starter-template-customfonts.jpg
-zip_url: https://github.com/PhaserEditor2D/starter-template-customfonts/archive/refs/tags/v1.1.0.zip
+zip_url: https://github.com/PhaserEditor2D/starter-template-customfonts/archive/refs/tags/v1.2.2.zip
 website: https://gitpod.io/#https://github.com/PhaserEditor2D/starter-template-customfonts
 gitpod_url: https://gitpod.io/#https://github.com/PhaserEditor2D/starter-template-customfonts
 tags: ["webfonts", "typescript", "webpack"]
