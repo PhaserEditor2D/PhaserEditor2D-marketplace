@@ -3,7 +3,7 @@ title: Basic CapacitorJS
 description: A simple template for building native wrappers with CapiacitorJS.
 author: phasereditor2d
 image: assets/starter-project-capacitorjs.jpg
-zip_url: https://github.com/PhaserEditor2D/starter-template-capacitorjs/archive/refs/tags/v1.2.3.zip
+zip_url: https://github.com/PhaserEditor2D/starter-template-capacitorjs/archive/refs/tags/v1.2.4.zip
 website: https://github.com/PhaserEditor2D/starter-template-capacitorjs/
 gitpod_url: https://gitpod.io/#https://github.com/PhaserEditor2D/starter-template-capacitorjs/
 tags: ["typescript", "webpack", "capacitor", "android", "ios"]
