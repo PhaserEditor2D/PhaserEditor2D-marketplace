@@ -54,6 +54,14 @@
                     </a>
                 </div>
 
+                <% if ($page.gitpod_url) { %>
+                    <div class="mt-4 mb-4">
+                        <a target="_blank" class="btn btn-outline-primary mb-2" href="<%= $page.gitpod_url %>">
+                            <i class="bi-pencil me-1"></i> Gitpod | ready-to-code
+                        </a>
+                    </div>
+                <% } %>
+
 
             </div>
         </div>
