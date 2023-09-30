@@ -2,7 +2,7 @@
 title: A day in the beach
 description: A point-and-click game. With an advanced configuration.
 image: assets/starter-example-a-day-in-the-beach.png
-zip_url: https://github.com/PhaserEditor2D/starter-example-a-day-in-the-beach/archive/refs/tags/v1.2.3.zip
+zip_url: https://github.com/PhaserEditor2D/starter-example-a-day-in-the-beach/archive/refs/tags/v1.2.4.zip
 website: https://github.com/PhaserEditor2D/starter-example-a-day-in-the-beach
 gitpod_url: https://gitpod.io/#https://github.com/PhaserEditor2D/starter-example-a-day-in-the-beach
 author: phasereditor2d
