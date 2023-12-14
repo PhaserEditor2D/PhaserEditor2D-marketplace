@@ -1,10 +1,18 @@
-<div class="card me-2 mt-2 bg-transparent border-0">
-
-    <h6 class="card-title">
-        <a class="text-white text-bold text-decoration-none" href="<%= $page.$rootPath %>/<%= page.$path %>">
-            <i class="<%= icon %> text-primary me-1"></i> <%= page.title %>
-        </a>
-    </h6>
+<% if (page.image) { %>
+    <div class="card me-2 mt-2 bg-transparent border-0">
+        <h6 class="card-title">
+            <a class="text-white text-bold text-decoration-none" href="<%= $page.$rootPath %>/<%= page.$path %>">
+                <i class="<%= icon %> text-primary me-1"></i> <%= page.title %>
+            </a>
+        </h6>
+<% } else { %>
+    <div class="card me-2 mt-2 p-2 bg-transparent border-primary">
+        <h6 class="card-title">
+            <a class="text-white text-bold" href="<%= $page.$rootPath %>/<%= page.$path %>">
+                <i class="<%= icon %> text-primary me-1"></i> <%= page.title %>
+            </a>
+        </h6>
+<% } %>
 
     <% if (page.image) { %>
     <a class="text-light text-bold text-decoration-none bg-dark" href="<%= $page.$rootPath %>/<%= page.$path %>"
