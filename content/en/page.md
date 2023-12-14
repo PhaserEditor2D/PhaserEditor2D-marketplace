@@ -7,6 +7,7 @@ baseUrl: https://marketplace.phasereditor2d.com
 menu:
     - examples
     - starters
+    - scriptlibs
     - plugins
     - libs
     - websites

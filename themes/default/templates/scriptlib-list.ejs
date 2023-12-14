@@ -3,12 +3,13 @@
     <div class="container mt-4">
 
         <%- include("includes/_itemgrid.ejs", {
-            examples: site.__examples.$pages,
+            examples: [],
             starters: [],
             scriptlibs: [],
             websites: [],
             plugins: [],
-            libs: []
+            libs: [],
+            scriptlibs: site.__scriptlibs.$pages
         }) %>
     </div>
 

@@ -14,6 +14,7 @@
             <%- include("includes/_itemgrid.ejs", {
                 examples: site.__examples.$pages.filter(e => e.author === $page.$name),
                 starters: site.__starters.$pages.filter(e => e.author === $page.$name),
+                scriptlibs: site.__scriptlibs.$pages.filter(e => e.author === $page.$name),
                 websites: site.__websites.$pages.filter(e => e.author === $page.$name),
                 plugins: site.__plugins.$pages.filter(e => e.author === $page.$name),
                 libs: site.__libs.$pages.filter(e => e.author === $page.$name)
